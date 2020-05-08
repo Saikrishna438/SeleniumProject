@@ -1,0 +1,4 @@
+﻿RoleName###RoleType###Results
+SbiiCashier###E
+AbxCashier###E
+IdxbiCashier###E

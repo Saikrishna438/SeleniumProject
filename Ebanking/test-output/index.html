@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ebanking.master.SeleniumGrid" class="method navigator-link" hash-for-method="Grid">Grid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ebanking.master.SeleniumGrid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Grid">
+                  </a> <!-- Grid -->
+                  <span class="method-name">Grid</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+(sk)&quot;,&quot;description&quot;:&quot;Wikipédia, slobodná a otvorená encyklopédia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sk&quot;]},{&quot;name&quot;:&quot;Википедија (sr)&quot;,&quot;description&quot;:&quot;Претрага Википедије на српском језику&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sr&quot;]},{&quot;name&quot;:&quot;Wikipedia (af)&quot;,&quot;description&quot;:&quot;Wikipedia, die vrye ensiklopedie&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;af&quot;]},{&quot;name&quot;:&quot;ویکی‌پدیا (fa)&quot;,&quot;description&quot;:&quot;ویکی‌پدیا، دانشنامهٔ آزاد&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;fa&quot;]},{&quot;name&quot;:&quot;Wikipedia (ms)&quot;,&quot;description&quot;:&quot;Wikipedia, ensiklopedia bebas&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ms&quot;]},{&quot;name&quot;:&quot;Wikipedia (ia)&quot;,&quot;description&quot;:&quot;Wikipedia, le encyclopedia libere&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ia&quot;]},{&quot;name&quot;:&quot;Wikipedia (no)&quot;,&quot;description&quot;:&quot;Wikipedia, den frie encyklopedi&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;NO&quot;]},{&quot;name&quot;:&quot;Википедия (ru)&quot;,&quot;description&quot;:&quot;Википедия, свободная энциклопедия&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ru&quot;]},{&quot;name&quot;:&quot;Wikipedia (br)&quot;,&quot;description&quot;:&quot;Wikipedia, an holloueziadur digor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;br&quot;]},{&quot;name&quot;:&quot;Wikipedia (pl)&quot;,&quot;description&quot;:&quot;Wikipedia, wolna encyklopedia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pl&quot;]},{&quot;name&quot;:&quot;Вікіпэдыя (be-tarask)&quot;,&quot;description&quot;:&quot;Вікіпэдыя, вольная энцыкляпэдыя&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;be-tarask&quot;]},{&quot;name&quot;:&quot;Wikipedia (sv)&quot;,&quot;description&quot;:&quot;Wikipedia, den fria encyklopedin&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sv-SE&quot;]},{&quot;name&quot;:&quot;ວິກິພີເດຍ (lo)&quot;,&quot;description&quot;:&quot;ວິກິພີເດຍ, ສາລານຸກົມເສລີ&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lo&quot;]},{&quot;name&quot;:&quot;Wikipedija (sl)&quot;,&quot;description&quot;:&quot;Wikipedija, prosta enciklopedija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sl&quot;]},{&quot;name&quot;:&quot;Vikipēdija&quot;,&quot;description&quot;:&quot;Vikipēdija, brīvā enciklopēdija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lv&quot;]},{&quot;name&quot;:&quot;Biquipedia (an)&quot;,&quot;description&quot;:&quot;A enciclopedia Libre&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;an&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:null,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true,&quot;dependencies&quot;:[],&quot;incognito&quot;:&quot;spanning&quot;,&quot;userPermissions&quot;:{&quot;permissions&quot;:[],&quot;origins&quot;:[]},&quot;icons&quot;:{&quot;16&quot;:&quot;favicon.ico&quot;},&quot;iconURL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:true,&quot;installTelemetryInfo&quot;:null,&quot;recommendationState&quot;:null,&quot;rootURI&quot;:&quot;resource://search-extensions/wikipedia/&quot;,&quot;location&quot;:&quot;app-builtin&quot;}
+1588689401570	addons.xpi	DEBUG	Loading bootstrap scope from resource://search-extensions/wikipedia/
+1588689401570	addons.xpi	DEBUG	Calling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1588689401570	addons.xpi	DEBUG	Calling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1588689421108	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/74.0/20200309095159/Linux_x86_64-gcc3/null/release-cck-ubuntu/Linux%204.15.0-88-generic%20(GTK%203.18.9%2Clibpulse%208.0.0)/canonical/1.0/update.xml
+1588689421872	addons.productaddons	INFO	Completed downloading document
+1588689422327	addons.productaddons	INFO	downloadXHR File download. status=200
+1588689422330	addons.productaddons	INFO	Downloaded file will be saved to /tmp/tmpaddon-865842
+
+Command duration or timeout: 45.36 seconds
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.ebanking.master.SeleniumGrid.Grid(SeleniumGrid.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+(sk)&quot;,&quot;description&quot;:&quot;Wikipédia, slobodná a otvorená encyklopédia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sk&quot;]},{&quot;name&quot;:&quot;Википедија (sr)&quot;,&quot;description&quot;:&quot;Претрага Википедије на српском језику&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sr&quot;]},{&quot;name&quot;:&quot;Wikipedia (af)&quot;,&quot;description&quot;:&quot;Wikipedia, die vrye ensiklopedie&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;af&quot;]},{&quot;name&quot;:&quot;ویکی‌پدیا (fa)&quot;,&quot;description&quot;:&quot;ویکی‌پدیا، دانشنامهٔ آزاد&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;fa&quot;]},{&quot;name&quot;:&quot;Wikipedia (ms)&quot;,&quot;description&quot;:&quot;Wikipedia, ensiklopedia bebas&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ms&quot;]},{&quot;name&quot;:&quot;Wikipedia (ia)&quot;,&quot;description&quot;:&quot;Wikipedia, le encyclopedia libere&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ia&quot;]},{&quot;name&quot;:&quot;Wikipedia (no)&quot;,&quot;description&quot;:&quot;Wikipedia, den frie encyklopedi&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;NO&quot;]},{&quot;name&quot;:&quot;Википедия (ru)&quot;,&quot;description&quot;:&quot;Википедия, свободная энциклопедия&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;ru&quot;]},{&quot;name&quot;:&quot;Wikipedia (br)&quot;,&quot;description&quot;:&quot;Wikipedia, an holloueziadur digor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;br&quot;]},{&quot;name&quot;:&quot;Wikipedia (pl)&quot;,&quot;description&quot;:&quot;Wikipedia, wolna encyklopedia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pl&quot;]},{&quot;name&quot;:&quot;Вікіпэдыя (be-tarask)&quot;,&quot;description&quot;:&quot;Вікіпэдыя, вольная энцыкляпэдыя&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;be-tarask&quot;]},{&quot;name&quot;:&quot;Wikipedia (sv)&quot;,&quot;description&quot;:&quot;Wikipedia, den fria encyklopedin&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sv-SE&quot;]},{&quot;name&quot;:&quot;ວິກິພີເດຍ (lo)&quot;,&quot;description&quot;:&quot;ວິກິພີເດຍ, ສາລານຸກົມເສລີ&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lo&quot;]},{&quot;name&quot;:&quot;Wikipedija (sl)&quot;,&quot;description&quot;:&quot;Wikipedija, prosta enciklopedija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sl&quot;]},{&quot;name&quot;:&quot;Vikipēdija&quot;,&quot;description&quot;:&quot;Vikipēdija, brīvā enciklopēdija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lv&quot;]},{&quot;name&quot;:&quot;Biquipedia (an)&quot;,&quot;description&quot;:&quot;A enciclopedia Libre&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;an&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:null,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true,&quot;dependencies&quot;:[],&quot;incognito&quot;:&quot;spanning&quot;,&quot;userPermissions&quot;:{&quot;permissions&quot;:[],&quot;origins&quot;:[]},&quot;icons&quot;:{&quot;16&quot;:&quot;favicon.ico&quot;},&quot;iconURL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:true,&quot;installTelemetryInfo&quot;:null,&quot;recommendationState&quot;:null,&quot;rootURI&quot;:&quot;resource://search-extensions/wikipedia/&quot;,&quot;location&quot;:&quot;app-builtin&quot;}
+1588689401570	addons.xpi	DEBUG	Loading bootstrap scope from resource://search-extensions/wikipedia/
+1588689401570	addons.xpi	DEBUG	Calling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1588689401570	addons.xpi	DEBUG	Calling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1588689421108	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/74.0/20200309095159/Linux_x86_64-gcc3/null/release-cck-ubuntu/Linux%204.15.0-88-generic%20(GTK%203.18.9%2Clibpulse%208.0.0)/canonical/1.0/update.xml
+1588689421872	addons.productaddons	INFO	Completed downloading document
+1588689422327	addons.productaddons	INFO	downloadXHR File download. status=200
+1588689422330	addons.productaddons	INFO	Downloaded file will be saved to /tmp/tmpaddon-865842
+
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;nebulaa1-Vostro-15-3568&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-88-generic&apos;, java.version: &apos;14&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:129)
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.server.FirefoxDriverProvider.callConstructor(FirefoxDriverProvider.java:91)
+	at org.openqa.selenium.remote.server.FirefoxDriverProvider.newInstance(FirefoxDriverProvider.java:68)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:60)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:222)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.lang.Thread.run(Thread.java:832)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/tmp/testng-eclipse-122891428/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ebanking.master.SeleniumGrid&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Grid')
+data.setCell(0, 2, 'com.ebanking.master.SeleniumGrid')
+data.setCell(0, 3, 45941);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ebanking.master.SeleniumGrid</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Grid</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

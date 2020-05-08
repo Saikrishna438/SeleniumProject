@@ -1,0 +1,4 @@
+﻿EmployeeName###LoginPasword###Role###Branch###Results
+Nagaraj###nagara$54###testIT###abc$$$$New Employer Created3141 Successfully
+Somaraj###somaya%4###Manager###Alugunur$$$$New Employer Created3144 Successfully
+Vinodraj###vinod$4###Accountant###Ameerpet$$$$New Employer Created3146 Successfully

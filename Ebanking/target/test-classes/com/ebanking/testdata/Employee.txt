@@ -1,0 +1,4 @@
+﻿EmployeeName###LoginPasword###Role###Branch###Results
+Nagaraj###nagara$54###testIT###abc
+Somaraj###somaya%4###Manager###Alugunur
+Vinodraj###vinod$4###Accountant###Ameerpet

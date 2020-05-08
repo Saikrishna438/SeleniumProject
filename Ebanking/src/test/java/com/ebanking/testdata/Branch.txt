@@ -1,0 +1,4 @@
+﻿BranchName###Address1###Area###Zipcode###Country###State###City###Results
+Thadikal###Thadikal###Thadikal###54785###INDIA###GOA###GOA
+Alugunur###Alugunur###Alugunur###58471###INDIA###Andhra Pradesh###Hyderabad
+Jammikunta###Jammikunta###Jammikunta###58675###INDIA###GOA###GOA

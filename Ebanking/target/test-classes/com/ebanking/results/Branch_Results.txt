@@ -1,0 +1,4 @@
+﻿BranchName###Address1###Area###Zipcode###Country###State###City###Results
+Thadikal###Thadikal###Thadikal###54785###INDIA###GOA###GOA$$$$New Branch with id 615 created Sucessfully
+Alugunur###Alugunur###Alugunur###58471###INDIA###Andhra Pradesh###Hyderabad$$$$New Branch with id 616 created Sucessfully
+Jammikunta###Jammikunta###Jammikunta###58675###INDIA###GOA###GOA$$$$New Branch with id 617 created Sucessfully
